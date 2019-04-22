@@ -3,10 +3,8 @@ set tabstop=4
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'w0rp/ale'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 

@@ -11,7 +11,14 @@ RUN apt-get update && \
 	curl \
 		-fLo ~/.vim/autoload/plug.vim \
 		--create-dirs \
-    	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
+	curl \
+		-fLo ~/.omnisharp/omnisharp-roslyn/release.tar.gz \
+		--create-dirs \
+		https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.32.18/omnisharp.http-linux-x64.tar.gz && \
+	tar -xzf ~/.omnisharp/omnisharp-roslyn/release.tar.gz \
+		-C ~/.omnisharp/omnisharp-roslyn/ && \
+	rm ~/.omnisharp/omnisharp-roslyn/release.tar.gz
 
 COPY ./home /root
 
