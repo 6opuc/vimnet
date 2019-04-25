@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0rp/ale'
+Plug 'lifepillar/vim-mucomplete'
 call plug#end()
 
 
@@ -20,7 +21,8 @@ let g:OmniSharp_timeout = 5
 " Don't autoselect first omnicomplete option, show options even if there is only
 " one (so the preview documentation is accessible). Remove 'preview' if you
 " don't want to see any documentation whatsoever.
-set completeopt=longest,menuone,preview
+"set completeopt=longest,menuone,preview
+set completeopt=longest,menuone
 
 " Fetch full documentation during omnicomplete requests.
 " There is a performance penalty with this (especially on Mono).
@@ -93,3 +95,5 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 
 " Enable snippet completion
 " let g:OmniSharp_want_snippet=1
+
+let g:mucomplete#empty_text = 1
