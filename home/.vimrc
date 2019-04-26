@@ -96,4 +96,15 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 " Enable snippet completion
 " let g:OmniSharp_want_snippet=1
 
-let g:mucomplete#empty_text = 1
+" let g:mucomplete#empty_text = 1
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#completion_delay = 1
+
+
+" common
+set number
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
