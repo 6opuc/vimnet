@@ -36,6 +36,8 @@ set previewheight=5
 
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
 let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:ale_sign_error = 'E:'
+let g:ale_sign_warning = 'W:'
 
 " Fetch semantic type/interface/identifier names on BufEnter and highlight them
 let g:OmniSharp_highlight_types = 1
@@ -108,3 +110,5 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+set mouse=a
+colorscheme desert
