@@ -112,3 +112,4 @@ set expandtab
 set smarttab
 set mouse=r
 colorscheme desert
+set encoding=utf-8
