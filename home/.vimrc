@@ -102,6 +102,11 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#completion_delay = 1
 
+" ctrlp
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': [''],
+    \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+    \ }
 
 " common
 set number
